@@ -54,11 +54,16 @@
                             Contact
                         </a>
                     </li>
-                    {{--  <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Contact
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('users')}}">
+                            Users
                         </a>
-                    </li>  --}}
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('class.list')}}">
+                            Classes
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>

@@ -28,3 +28,8 @@ Route::get('/', [LoginController::class, 'login'])->name('login');
 Route::post('/do-login', [LoginController::class, 'doLogin'])->name('do.login');
 Route::post('/do-register', [LoginController::class, 'doRegister'])->name('do.register');
 Route::get('/register', [LoginController::class, 'register'])->name('register');
+Route::get('/users-list', [LoginController::class, 'list'])->name('users');
+Route::get('/class-list', [LoginController::class, 'classList'])->name('class.list');
+Route::get('/class-add', [LoginController::class, 'addClass'])->name('class.add');
+Route::post('/class-add', [LoginController::class, 'doAddClass'])->name('do.add.class');
+

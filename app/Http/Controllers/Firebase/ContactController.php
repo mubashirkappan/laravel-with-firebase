@@ -30,7 +30,6 @@ class ContactController extends Controller
 
     public function edit($key)
     {
-        // $this->database->getReference('contacts')->set('New name');//create new one under conatcts
         $reference = $this->database->getReference('contacts')->getChild($key)->getValue();
         if ($reference) {
             return view('contact_edit', compact('reference', 'key'));
